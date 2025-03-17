@@ -12,10 +12,10 @@ const Navbar = () => {
               <img className='h-10 w-10 mr-2' src={logo} alt="logo" />
               <span className="text-xl tracking-tight">krishna</span>
             </div>
-            <ul className='hidden lg:flex ml-14 space-x-12'>
+            <ul  className='hidden lg:flex ml-14 space-x-12 text-white '>
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href}>{item.label}</a>
+                  <a style={{color:'white'}} href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
