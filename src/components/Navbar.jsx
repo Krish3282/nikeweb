@@ -41,11 +41,18 @@ const Navbar = () => {
           <ul>
 
             {navItems.map((item, index)=>(
-              <li key={index}>
+              <li key={index} className='py-4'>
                <a  href = { item.href}> {item.label}</a>
               </li>
             ))}
           </ul>
+          <div className="flex space-x-6">
+            <a href="#" className=' py-2 px-3 border rounded-md'>Sing Up</a>
+            <a href="#" className='border bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>Create an account</a>
+            
+
+
+          </div>
           </div>
         )}
       </div>  
